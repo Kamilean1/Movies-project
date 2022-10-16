@@ -1,0 +1,38 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-text {
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    color: white;
+    font-weight: lighter;
+}
+
+h1:before {
+    content: attr(REFL-TEXT);
+    position: absolute;
+    margin-left: 590px;
+    line-height: 60px;
+    top: 0;
+    left: 0;
+    transform-origin: bottom;
+    transform: rotateX(180deg);
+    background: linear-gradient(to top, #fff, transparent);
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 0.5;
+}
+
+.movies {
+    color: #FF5F1F;
+}
